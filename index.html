@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+<body>
+  <section>
+    <h2>Agregar tarea</h2>
+    <form>
+      <label for="tarea">Nombre de la tarea:</label>
+      <input type="text" id="inputTarea" name="tarea">
+      <button type="submit" id="agregarTarea">Agregar tarea</button>
+    </form>
+  </section>
+  
+  <section id="contenedorTareasIncompletas" class="contenedorListado">
+    <div id="headerListado">
+      <h2>Lista de tareas</h2>
+      <div id="contenedorAcciones">
+        <button id="invertirOrden">
+          <i class="fas fa-sort"></i>
+        </button>
+        <button id="limpiarTareas">Limpiar lista</button>
+      </div>
+    </div>
+    <ul id="listaTareas"></ul>
+  </section>
+
+  <section id="contenedorTareasCompletadas" class="contenedorListado">
+    <h2>Tareas completadas</h2>
+    <ul id="listaTareasCompletadas"></ul>
+  </section>
+
+  <template id="tareaTemplate">
+    <li class="tarea">
+      <input type="checkbox" class="checkboxTarea">
+      <p class="nombreTarea">Nombre de la tarea</p>
+      <button class="eliminarTarea">
+        <i class="fas fa-trash-alt"></i>
+      </button>
+    </li>
+  </template>
+
+  <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+/* Estilos generales */
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: #f2f2f2;
+  width: 60%;
+  margin: 100px auto;
+}
+
+/* Estilos del encabezado */
+header {
+  background-color: #005DAA;
+  color: #fff;
+  padding: 10px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+/* Estilos del formulario */
+form {
+  margin-bottom: 20px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+form input[type="text"] {
+  width: 95%;
+  min-width: 200px;
+  padding: 10px;
+  margin: 0 auto 10px auto;
+  border: none;
+  border-radius: 3px;
+  background-color: #f5f5f5;
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+button {
+  display: block;
+  padding: 10px;
+  border: none;
+  border-radius: 3px;
+  background-color: #005DAA;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #084A8C;
+}
+
+/* Estilos de la lista de tareas */
+#headerListado {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contenedorAcciones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#contenedorAcciones button {
+  margin-left: 5px;
+}
+
+#listaTareas, #listaTareasCompletadas {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-self: center;
+}
+
+.tarea {
+  display: flex;
+  justify-content: flex-start;
+  width: 100%;
+  align-items: center;
+  align-self: center;
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.tarea:last-child {
+  margin-bottom: 0;
+}
+
+.checkboxTarea {
+  margin: 0;
+  margin-right: 10px;
+}
+
+.nombreTarea {
+  margin: 0;
+  font-size: 16px;
+}
+
+.eliminarTarea {
+  background-color: rgb(221, 17, 17);
+  color: #fff;
+  font-weight: bolder;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: 10px;
+}
+
+.eliminarTarea:hover {
+  background-color: rgb(179, 27, 27);
+}
+
+#contenedorTareasCompletadas {
+  margin-top: 40px;
+}
+
+#listaTareasCompletadas .tarea {
+  background-color: #b2e7b3;
+}
+
+.ocultar {
+  display: none;
+}
+
+/* Estilos del pie de página */
+footer {
+  background-color: #005DAA;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
